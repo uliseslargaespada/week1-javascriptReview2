@@ -3,7 +3,9 @@
 function fortuneTeller(name, age) {
   let nameWithAge = '';
 
-  nameWithAge = `Name: ${name} and Age: ${age}`;
+  if(name.length < 7) {
+    nameWithAge = `${name} will marry late in life.`;
+  }
 
   return nameWithAge;
 }
